@@ -1,0 +1,15 @@
+<h1> Enter long url </h1>
+
+
+<%= form_for:url, url:urls_path do |f| %>
+<p>
+<%= f.label:long_url %><br>
+<%= f.text_field(:long_url, {:class=>'form-control'}) %>
+</p>
+
+
+<p>
+<%= f.submit({:class=> 'btn btn-primary'}) %>
+</p>
+
+<%end%>
