@@ -19,7 +19,6 @@ class UrlsController < ApplicationController
   end
 
   def show
-  	byebug
   	short_url = params[:id]
     @url = Url.find_by(short_url: "#{"http://localhost:3000/urls"}/#{short_url}")
     redirect_to @url.sanitize
