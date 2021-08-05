@@ -13,7 +13,7 @@ class UrlsController < ApplicationController
     if @url.save
     	$url_id = @url.id
       render json: {short_url: @url.short_url,
-      				message: "please copy the url and paste in browser"}
+        message: "please copy the url and paste in browser"}
     else
     	render 'new'
     end
